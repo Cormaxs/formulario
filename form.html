@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Producto</title>
+</head>
+<body>
+  <h1>Agregar Producto</h1>
+  <form action="recibir_datos.py" method="POST" enctype="multipart/form-data">
+    <label for="nombre">Nombre del Producto:</label>
+    <input type="text" id="nombre" name="nombre" placeholder="Ingrese el nombre del producto">
+    <br>
+    <label for="precio">Precio del Producto:</label>
+    <input type="number" id="precio" name="precio" placeholder="Ingrese el precio (ej.: 123.45)">
+    <br>
+    <label for="imagen">Imagen del Producto:</label>
+    <input type="file" id="imagen" name="imagen">
+    <br>
+    <input type="submit" value="Enviar">
+  </form>
+</body>
+</html>
